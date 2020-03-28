@@ -1,0 +1,314 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900')
+;
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 71em;
+}
+
+.clearfix::after, section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a:visited {
+    color: #DDD;
+}
+
+/* typography 
+======================= */
+
+h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.5em;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+.title {
+    font-size: 2.75rem;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: 0.9em;
+}
+
+@media (min-width: 55rem) {
+    .title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+@media (min-width: 60 rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+.button-small {
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.button {
+    color: #DDD;
+    border-color: #DDD;
+}
+
+.button:hover,
+.button:focus {
+    background: #DDD;
+    color: #000d33;
+}
+
+
+
+/* header 
+======================= */
+
+header {
+    position: absolute;
+    margin-top: 1em;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;    
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5em;
+    color: #FFF;
+}
+
+nav a:hover,
+nav a:focus{
+    color:#DDD;
+}
+
+
+@media (min-width: 60rem) {
+    .logo {
+        float: left;
+    }
+    nav {
+        float: right;
+    }
+}
+
+/* home-hero 
+======================= */
+.home-hero {
+    background-image: url(../img/hero-bg.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #FFF;
+    /* opacity: 0.9; */
+}
+
+@media (min-width: 60rem) {
+    .home-hero{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+.logo {
+    height: 20%;
+    width: 20%;
+}
+
+
+/* home-about 
+======================= */
+
+.home-about-textbox {
+    /* background-image: linear-gradient(to bottom right, #0f4bcc, #000d33); */
+    background: #232323;
+    padding: 4em;
+    width: 101vw;
+    margin-left: -2.75%;
+    outline: 2px solid #DDD;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+}
+
+.home-about-textbox h1 {
+    color: #DDD;
+    position: absolute;
+    top: .3em;
+    left: 50%;
+    transform: translate(-50%);
+    background: #232323;
+    padding: 0 0.145em;
+}
+
+@media (min-width: 25rem) {
+    h1 {
+        font-size: 2rem;
+    }
+    .home-about-textbox h1 {
+        top: .6em;
+        padding: 0 .5em;
+    }
+}
+
+@media (min-width: 60rem) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-about {
+        background-image: url(../img/about-me.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 20em;
+    }
+
+    .home-about-textbox {
+        width: 40%;
+        margin-left: -2%;
+        top: -10em;
+        text-align: left;
+        box-shadow: 0 0 4em 0 rgba(255, 255, 255, .25);
+        padding: 5em;
+        outline-offset: -3em;
+    }
+
+    .home-about-textbox h1 {
+        top: 0.5em;
+        left: 5rem;
+        transform: translateX(0);
+    }
+}
+
+
+/* Some of my work 
+======================= */
+
+.portfolio {
+    margin: 3em 0 0;
+}
+
+.port-item {
+    margin: 0;
+    position: relative;
+}
+
+.port-item img {
+    display: block;
+}
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0, 0, 0, .75);
+    padding-bottom: 1em;
+}
+
+.port-desc p {
+    margin: 1em;
+}
+
+@media (min-width: 37.5rem) {
+    .port-item {
+        width: 50%;
+        float:  left;
+    }
+}
+
+@media (min-width: 60rem) {
+    .port-item {
+        width: 33.33333333333334%;
+        overflow: hidden;
+    }
+
+    .port-desc {
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-desc {
+        transform: translateY(0%)
+    }
+
+    .port-item img:hover{
+        -webkit-filter: brightness(70%);
+    }
+}
+
+
+/* call to action (cta) 
+======================= */
+
+.cta {
+    background-image: url(../img/hero-bg.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0em;
+    color: #FFF;
+}
+
