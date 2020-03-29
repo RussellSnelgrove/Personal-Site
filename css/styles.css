@@ -354,11 +354,11 @@ footer{
 
 /* About page information
 ======================= */
-/* 
+
 .about-page .container {
-    /* width: 100%;
-    max-width: none; */
-} */
+    width: 100%;
+    max-width: none;
+}
 
 .about-textbox {
     background: #232323;
