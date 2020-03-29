@@ -168,8 +168,8 @@ nav a:focus{
 
 @media (min-width: 60rem) {
     .home-hero{
-        height: 100vh;
-        padding-top: 35vh;
+        height: 80vh;
+        padding-top: 15vh;
     }
 }
 
@@ -186,7 +186,7 @@ nav a:focus{
     /* background-image: linear-gradient(to bottom right, #0f4bcc, #000d33); */
     background: #232323;
     padding: 4em;
-    width: 101vw;
+    width: 100vw;
     margin-left: -2.75%;
     outline: 2px solid #DDD;
     outline-offset: -2.5em;
@@ -211,6 +211,13 @@ nav a:focus{
     .home-about-textbox h1 {
         top: .6em;
         padding: 0 .5em;
+    }
+}
+
+@media (max-width: 26.25rem) {
+    .home-about-textbox h1{
+        top: .75em;
+        font-size: 1.75rem;
     }
 }
 
@@ -327,3 +334,76 @@ footer{
         float: none;
     }
 }
+
+
+/* Additional information
+======================= */
+
+
+.about-textbox {
+    /* background-image: linear-gradient(to bottom right, #0f4bcc, #000d33); */
+    background: #232323;
+    padding: 4em;
+    width: 100vw;
+    margin-left: -2.75%;
+    outline: 2px solid #DDD;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+}
+
+.about-textbox h1 {
+    color: #DDD;
+    position: absolute;
+    top: .3em;
+    left: 50%;
+    transform: translate(-50%);
+    background: #232323;
+    padding: 0 0.145em;
+}
+
+@media (min-width: 25rem) {
+    /* h1 {
+        font-size: 2rem;
+    } */
+    .about-textbox h1 {
+        top: .6em;
+        padding: 0 .5em;
+    }
+}
+
+@media (max-width: 26.25rem) {
+    .about-textbox h1{
+        top: .75em;
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    
+    .home-about {
+        background-image: url(../img/about-me.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 20em;
+    }
+
+    .home-about-textbox {
+        width: 40%;
+        margin-left: -2%;
+        top: -10em;
+        text-align: left;
+        box-shadow: 0 0 4em 0 rgba(255, 255, 255, .25);
+        padding: 5em;
+        outline-offset: -3em;
+    }
+
+    .home-about-textbox h1 {
+        top: 0.5em;
+        left: 5rem;
+        transform: translateX(0);
+    }
+}
+
+
