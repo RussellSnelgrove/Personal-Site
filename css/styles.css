@@ -354,6 +354,12 @@ footer{
 
 /* About page information
 ======================= */
+/* li {
+    display: inline-block;
+}
+ul {
+    list-style-position: inside
+} */
 
 .about-page .container {
     width: 100%;
@@ -368,9 +374,8 @@ footer{
     outline-offset: -2.5em;
     color: #FFF;
     position: relative;
+    text-align: left;
     box-shadow: 0 0 4em 0 rgba(255, 255, 255, .25);
-
-    /* op */
 }
 
 .about-textbox h1 {
