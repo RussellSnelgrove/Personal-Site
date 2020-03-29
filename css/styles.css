@@ -24,7 +24,9 @@ img {
     max-width: 71em;
 }
 
-.clearfix::after, section::after {
+.clearfix::after,
+section::after,
+footer::after {
     content: '';
     display: block;
     clear: both;
@@ -146,6 +148,7 @@ nav a:focus{
 @media (min-width: 60rem) {
     .logo {
         float: left;
+        padding-left: 2em;
     }
     nav {
         float: right;
@@ -305,10 +308,22 @@ nav a:focus{
 ======================= */
 
 .cta {
-    background-image: url(../img/hero-bg.JPG);
+    /* background-image: url(../img/hero-bg.JPG);
     background-size: cover;
-    background-position: center;
-    padding: 10em 0em;
+    background-position: center; */
+    background: #0d214e;
+    padding: 5em 0em;
     color: #FFF;
 }
 
+
+footer{
+    background: #232323;
+    color: #FFF;
+}
+
+@media (min-width: 60rem) {
+    footer nav {
+        float: none;
+    }
+}
