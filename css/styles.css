@@ -336,20 +336,41 @@ footer{
 }
 
 
-/* Additional information
+/* Additional pages
+======================= */
+.additional-page {
+    background-image: url(../img/hero-bg.JPG);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10em;
+    color: #FFF;
+}
+
+@media (min-width: 60rem) {
+    .additional-page {
+        padding-top: 15vh;
+    }
+}
+
+/* About page information
 ======================= */
 
+.about-page .container {
+    width: 100%;
+    max-width: none;
+}
 
 .about-textbox {
-    /* background-image: linear-gradient(to bottom right, #0f4bcc, #000d33); */
     background: #232323;
     padding: 4em;
-    width: 100vw;
-    margin-left: -2.75%;
+    width: unset;
     outline: 2px solid #DDD;
     outline-offset: -2.5em;
     color: #FFF;
     position: relative;
+    box-shadow: 0 0 4em 0 rgba(255, 255, 255, .25);
+
+    /* op */
 }
 
 .about-textbox h1 {
@@ -362,48 +383,13 @@ footer{
     padding: 0 0.145em;
 }
 
-@media (min-width: 25rem) {
-    /* h1 {
-        font-size: 2rem;
-    } */
-    .about-textbox h1 {
-        top: .6em;
-        padding: 0 .5em;
-    }
-}
 
 @media (max-width: 26.25rem) {
     .about-textbox h1{
-        top: .75em;
+        top: .55em;
         font-size: 1.75rem;
     }
 }
 
-@media (min-width: 60rem) {
-    
-    .home-about {
-        background-image: url(../img/about-me.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding-bottom: 20em;
-    }
-
-    .home-about-textbox {
-        width: 40%;
-        margin-left: -2%;
-        top: -10em;
-        text-align: left;
-        box-shadow: 0 0 4em 0 rgba(255, 255, 255, .25);
-        padding: 5em;
-        outline-offset: -3em;
-    }
-
-    .home-about-textbox h1 {
-        top: 0.5em;
-        left: 5rem;
-        transform: translateX(0);
-    }
-}
 
 
