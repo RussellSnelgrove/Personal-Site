@@ -403,3 +403,41 @@ footer{
     }
 }
 
+/* Contact page
+======================= */
+
+.contact-page .container {
+    width: 100%;
+    max-width: none;
+}
+
+.contact-textbox {
+    background: #232323;
+    padding: 4em;
+    width: unset;
+    outline: 2px solid #DDD;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 0 4em 0 rgba(255, 255, 255, .25);
+    text-align: center;
+}
+
+.contact-textbox h1 {
+    color: #DDD;
+    position: absolute;
+    top: .3em;
+    left: 50%;
+    transform: translate(-50%);
+    background: #232323;
+    padding: 0 0.145em;
+}
+
+
+@media (max-width: 26.25rem) {
+    .contact-textbox h1{
+        top: .55em;
+        font-size: 1.75rem;
+    }
+}
