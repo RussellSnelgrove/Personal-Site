@@ -253,7 +253,7 @@ nav a:focus{
 }
 
 
-/* Some of my work 
+/* Portfolio home page 
 ======================= */
 
 .portfolio {
@@ -439,5 +439,88 @@ footer{
     .contact-textbox h1{
         top: .55em;
         font-size: 1.75rem;
+    }
+}
+
+
+
+/* call to action (cta) 
+======================= */
+
+.cta {
+    background: #0d214e;
+    padding: 5em 0em;
+    color: #FFF;
+}
+
+
+footer{
+    background: #232323;
+    color: #FFF;
+}
+
+@media (min-width: 60rem) {
+    footer nav {
+        float: none;
+    }
+}
+
+
+
+/* Projects Main page
+======================= */
+
+
+.portfolio {
+    margin: 3em 0 0;
+}
+
+.project-item {
+    margin: 0;
+    position: relative;
+}
+
+.project-item img {
+    display: block;
+}
+
+.project-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0, 0, 0, .75);
+    padding-bottom: 1em;
+}
+
+.project-desc p {
+    margin: 1em;
+}
+
+@media (min-width: 37.5rem) {
+    .project-item {
+        width: 50%;
+        float:  left;
+    }
+}
+
+@media (min-width: 60rem) {
+    .project-item {
+        width: 25%;
+        overflow: hidden;
+    }
+
+    .project-desc {
+        transform: translateY(150%);
+    }
+
+    .project-item:hover .project-desc {
+        transform: translateY(0%)
+    }
+
+    .project-item img:hover{
+        -webkit-filter: brightness(70%);
     }
 }
