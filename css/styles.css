@@ -308,6 +308,10 @@ nav a:focus{
     .port-item img:hover{
         -webkit-filter: brightness(70%);
     }
+
+    .portfolio h2{
+        padding-bottom: 1em;
+    }
 }
 
 
@@ -348,7 +352,7 @@ footer{
 
 @media (min-width: 60rem) {
     .additional-page {
-        padding-top: 15vh;
+        padding-top: 20vh;
     }
 }
 
